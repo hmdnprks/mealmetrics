@@ -6,8 +6,8 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 
-const generateInfo = async (req, res) => {
-  const { recipe } = req.body
+export default async function handler(req, res) {
+  const { recipe } = req.body;
   // use try to make a request to the OpenAI completetion api and return the response
   try {
     const completion = await openai.createChatCompletion({
@@ -38,6 +38,4 @@ const generateInfo = async (req, res) => {
     });
   }
 }
-
-module.exports = { generateInfo };
 

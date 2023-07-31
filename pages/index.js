@@ -26,7 +26,7 @@ function HomePage() {
     setLoading(true);
     try {
       const response = await fetch(
-        "http://localhost:8080/openai/generateinfo",
+        "/api/generateInfo",
         {
           method: "POST",
           headers: {
