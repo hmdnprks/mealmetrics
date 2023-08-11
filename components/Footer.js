@@ -25,10 +25,6 @@ const Footer = () => {
         }}
         >
         <Typography>
-            Made with ❤️ by LadyKerr &
-            <a href="https://copilot.github.com/" target="_blank" rel="noopener noreferrer" alt="github copilot" > GitHub Copilot</a>
-            </Typography>
-        <Typography>
             Powered by
             <a href="https://platform.openai.com/overview" target="_blank" rel="noopener noreferrer" alt="openai api"> OpenAI</a> 🤖
         </Typography>
